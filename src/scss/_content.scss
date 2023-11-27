@@ -1,0 +1,658 @@
+/**<ОСНОВНОЙ КОНТЕНТ>**************************************************************************************************************************************************/
+/***<Content-1>****************************************************************************************************************/
+.main-block {
+	position: relative;
+	margin: 0px 0px 90px 0px;
+	&__container {
+	}
+
+	&__body {
+		position: relative;
+		padding: 200px 0px 220px 0px;
+		z-index: 5;
+		@include fontz(4.4rem, 400, rgb(255, 255, 255), 131%, 0.2px);
+	}
+
+	&__title {
+		margin: 0px 0px 35px 0px;
+	}
+
+	&__text {
+		margin: 0px 0px 40px 0px;
+	}
+
+	&__buttons {
+		display: flex;
+	}
+
+	&__button {
+		width: 390px;
+		height: 120px;
+		display: flex;
+	}
+
+	&__background {
+		opacity: 0.15;
+		position: absolute;
+		width: 700px;
+		height: 500px;
+		top: 25%;
+		left: 50%;
+	}
+}
+
+/*...Display-adapt......................................................................................................................................*/
+@media (max-width: 1366px) {
+	.main-block {
+		&__body {
+			padding: 200px 0px 180px 0px;
+			@include fontz(3.7rem, 400, rgb(255, 255, 255), 131%, 0.2px);
+		}
+
+		&__title {
+			margin: 0px 0px 35px 0px;
+		}
+
+		&__text {
+			margin: 0px 0px 35px 0px;
+		}
+
+		&__buttons {
+		}
+
+		&__button {
+			width: 260px;
+			height: 80px;
+			@include fontz(1.4rem, 400, rgb(0, 0, 0), 50px, 1px);
+		}
+
+		&__background {
+			top: 30%;
+			left: 45%;
+		}
+	}
+}
+@media (max-width: 1024px) {
+	.main-block {
+		&__body {
+			padding: 150px 0px 160px 0px;
+			@include fontz(2.8rem, 400, rgb(255, 255, 255), 131%, 0.2px);
+		}
+		&__background {
+			width: 600px;
+			height: 450px;
+			top: 35%;
+			left: 45%;
+		}
+	}
+}
+@media (max-width: 768px) {
+	.main-block {
+		&__container {
+		}
+
+		&__body {
+			padding: 150px 0px 160px 0px;
+			@include fontz(2.7rem, 400, rgb(255, 255, 255), 131%, 0.2px);
+		}
+
+		&__title {
+			margin: 0px 0px 25px 0px;
+		}
+
+		&__text {
+			margin: 0px 0px 25px 0px;
+		}
+	}
+}
+@media (max-width: 552px) {
+	.main-block {
+		&__container {
+		}
+
+		&__body {
+			padding: 150px 0px 160px 0px;
+			@include fontz(1.7rem, 400, rgb(255, 255, 255), 131%, 0.2px);
+			text-align: center;
+		}
+
+		&__title {
+			margin: 0px 0px 25px 0px;
+		}
+
+		&__text {
+			margin: 0px 0px 25px 0px;
+		}
+
+		&__buttons {
+			align-items: center;
+			justify-content: center;
+		}
+
+		&__button {
+		}
+
+		&__background {
+			top: 10%;
+			left: 0%;
+		}
+	}
+}
+/*....</Display-adapt>.....................................................................................................................................*/
+/***</Content-1>****************************************************************************************************************/
+
+/***<Content-2>****************************************************************************************************************/
+.sponsors-block-body {
+	background-color: #4a4a4a;
+	&__container {
+		height: 175px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+}
+.sponsors-block-slider {
+	&__wrapper {
+		position: relative;
+	}
+	&__slide {
+	}
+
+	&__image {
+		img {
+			max-width: 100px;
+			height: 100px;
+		}
+	}
+	._tamer-slide {
+		position: relative;
+		top: 25%;
+		img {
+			width: 200px;
+			height: 60px;
+		}
+	}
+}
+.swiper-container {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+
+/*...Display-adapt......................................................................................................................................*/
+@media (max-width: 1366px) {
+	.sponsors-block-slider {
+	}
+}
+@media (max-width: 1024px) {
+	.sponsors-block-body {
+	}
+	.sponsors-block-slider {
+		&__slide {
+		}
+
+		&__image {
+			img {
+				width: 80px;
+				height: 80px;
+			}
+		}
+		._tamer-slide {
+			right: 35px;
+			img {
+				width: 180px;
+				height: 54px;
+			}
+		}
+	}
+}
+@media (max-width: 768px) {
+	.sponsors-block-body {
+	}
+	.sponsors-block-slider {
+		&__slide {
+		}
+
+		._tamer-slide {
+			right: 5px;
+		}
+	}
+}
+@media (max-width: 552px) {
+	.sponsors-block-slider {
+	}
+}
+@media (max-width: 552px) {
+	.sponsors-block-body {
+	}
+	.sponsors-block-slider {
+	}
+}
+@media (max-width: 360px) {
+	.sponsors-block-body {
+	}
+	.sponsors-block-slider {
+	}
+}
+/*....</Display-adapt>.....................................................................................................................................*/
+/***</Content-2>****************************************************************************************************************/
+
+/***<Content-3>****************************************************************************************************************/
+.cards-block-body {
+	position: relative;
+	padding: 100px 0px 100px 0px;
+	&__container {
+	}
+	// &__title {
+	// }
+}
+.cards-block-slider {
+	&__wrapper {
+	}
+
+	&__slide {
+	}
+
+	&__card {
+		img {
+			width: 100%;
+			border-radius: 5%;
+		}
+	}
+}
+.swiper-container {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.swiper-button-prev {
+	background-color: $CUSTOM_COLOR_SWIPER_ARROW;
+	width: 50px;
+	height: 55px;
+	position: absolute;
+	top: 55%;
+	left: 30px;
+	&:after {
+		font-size: 2rem;
+		color: #fff;
+	}
+	&:hover {
+		background-color: $CUSTOM_COLOR_SWIPER_ARROW_HOVER;
+	}
+}
+.swiper-button-next {
+	background-color: $CUSTOM_COLOR_SWIPER_ARROW;
+	width: 50px;
+	height: 55px;
+	position: absolute;
+	top: 55%;
+	right: 30px;
+	&:after {
+		font-size: 2rem;
+		color: #fff;
+	}
+	&:hover {
+		background-color: $CUSTOM_COLOR_SWIPER_ARROW_HOVER;
+	}
+}
+/*...Display-adapt......................................................................................................................................*/
+
+/*....</Display-adapt>.....................................................................................................................................*/
+/***</Content-3>****************************************************************************************************************/
+
+/***<Content-4>****************************************************************************************************************/
+
+/*...Display-adapt......................................................................................................................................*/
+
+/*....</Display-adapt>.....................................................................................................................................*/
+/***</Content-4>****************************************************************************************************************/
+/***<Content-5>****************************************************************************************************************/
+.choose-us-block {
+	&__container {
+		padding: 130px 15px 160px 15px;
+	}
+	&__body {
+		display: flex;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		margin: 0px -15px;
+	}
+	&__column {
+		padding: 0px 15px;
+		flex: 0 0 33.333%;
+	}
+	&__item {
+		padding: 40px;
+		background-color: #232323;
+		border-radius: 10px;
+		height: 320px;
+		overflow: auto;
+	}
+
+	&__label {
+		@include fontz(1.7rem, 400, rgb(255, 255, 255), 131%, 0.2px);
+		margin: 0px 0px 2.8rem 0px;
+	}
+
+	&__text {
+		@include fontz(1.2rem, 400, rgb(255, 255, 255), 131%, 0.2px);
+	}
+}
+
+/*...Display-adapt......................................................................................................................................*/
+@media (max-width: 1366px) {
+	.choose-us-block {
+		&__container {
+			padding: 100px 15px 160px 15px;
+		}
+		&__item {
+			height: 440px;
+		}
+	}
+}
+@media (max-width: 1024px) {
+	.choose-us-block {
+		&__container {
+			padding: 100px 5px 120px 5px;
+		}
+		&__body {
+			margin: 0px -5px;
+		}
+		&__column {
+			padding: 0px 5px;
+		}
+		&__item {
+			padding: 20px;
+		}
+		&__label {
+			@include fontz(1.7rem, 400, rgb(255, 255, 255), 131%, 0.2px);
+			margin: 0px 0px 40px 0px;
+		}
+
+		&__text {
+			@include fontz(1.2rem, 400, rgb(255, 255, 255), 131%, 0.2px);
+		}
+	}
+}
+@media (max-width: 768px) {
+	.choose-us-block {
+		&__container {
+			padding: 70px 5px 80px 5px;
+		}
+		&__body {
+		}
+		&__column {
+			flex: 0 0 50%;
+			margin: 0px 0px 10px 0px;
+		}
+		&__item {
+			padding: 20px;
+		}
+		&__label {
+			@include fontz(1.7rem, 400, rgb(255, 255, 255), 131%, 0.2px);
+			margin: 0px 0px 40px 0px;
+		}
+
+		&__text {
+			@include fontz(1.2rem, 400, rgb(255, 255, 255), 131%, 0.2px);
+		}
+	}
+}
+@media (max-width: 510px) {
+	.choose-us-block {
+		&__container {
+			padding: 60px 5px;
+		}
+		&__body {
+		}
+		&__column {
+			flex: 0 0 100%;
+			margin: 0px 0px 20px 0px;
+		}
+		&__item {
+		}
+		&__label {
+			@include fontz(1.7rem, 400, rgb(255, 255, 255), 131%, 0.2px);
+			margin: 0px 0px 40px 0px;
+		}
+
+		&__text {
+			@include fontz(1.2rem, 400, rgb(255, 255, 255), 131%, 0.2px);
+			margin: 0px 20px 0px 0px;
+		}
+	}
+}
+/*....</Display-adapt>.....................................................................................................................................*/
+/***</Content-5>****************************************************************************************************************/
+/***<Content-6>****************************************************************************************************************/
+.map-block {
+	background-color: #161616;
+	&__container {
+		padding: 130px 15px;
+	}
+
+	&__body {
+		background-color: #232323;
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		border-radius: 10px;
+		@include fontz(1.7rem, 400, rgb(255, 255, 255), 131%, 0.2px);
+		margin: 0px 0px 40px 0px;
+	}
+
+	&__address-phone {
+		padding: 70px;
+	}
+
+	&__address {
+		margin: 0px 0px 80px 0px;
+	}
+
+	&__address-title {
+		margin: 0px 0px 20px 0px;
+	}
+
+	&__text {
+	}
+
+	&__phone {
+	}
+
+	&__phone-title {
+		margin: 0px 0px 24px 0px;
+	}
+
+	&__phone-number {
+	}
+
+	&__phone-text {
+		@include fontz(1.4rem, 400, rgb(255, 255, 255), 131%, 0.2px);
+		margin: 0px 0px 18px 0px;
+	}
+
+	&__phone-number-links {
+		&:not(:last-child) {
+			margin: 0px 0px 20px 0px;
+		}
+	}
+
+	&__phone-number-link {
+		@include fontz(1.4rem, 400, rgb(255, 255, 255), 131%, 0.5px);
+		position: relative;
+		a {
+			color: white;
+			&:hover {
+				color: rgb(202, 202, 202);
+			}
+			svg {
+				position: relative;
+				margin: 0;
+				top: 5px;
+				left: -5px;
+				background-color: green;
+				border-radius: 50%;
+				width: 24px;
+				height: 24px;
+			}
+		}
+	}
+	&__map-block {
+		display: flex;
+		position: relative;
+		justify-content: end;
+	}
+	&__map {
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+		min-width: 1000px;
+		min-height: 750px;
+		width: 100%;
+		height: 100%;
+	}
+}
+/*...Display-adapt......................................................................................................................................*/
+@media (max-width: 1366px) {
+	.map-block {
+		background-color: #161616;
+		&__container {
+			padding: 105px 15px;
+		}
+
+		&__body {
+			@include fontz(1.6rem, 400, rgb(255, 255, 255), 131%, 0.2px);
+		}
+
+		&__address-phone {
+			padding: 50px;
+		}
+		&__phone-text {
+			@include fontz(1.2rem, 400, rgb(255, 255, 255), 131%, 0.2px);
+			margin: 0px 0px 18px 0px;
+		}
+		&__phone-number-link {
+			@include fontz(1.2rem, 400, rgb(255, 255, 255), 131%, 0.2px);
+		}
+
+		&__map {
+			min-width: 710px;
+			min-height: 664px;
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+@media (max-width: 1024px) {
+	.map-block {
+		&__container {
+			padding: 105px 15px;
+		}
+
+		&__body {
+			display: flex;
+			flex-direction: column;
+			background-color: #23232300;
+			border-radius: 0px;
+			@include fontz(1.2rem, 400, rgb(255, 255, 255), 131%, 0.2px);
+		}
+		&__phone {
+			display: none;
+		}
+		&__address {
+			display: flex;
+			margin: 0px 0px 0px 0px;
+		}
+		&__address-title {
+			margin: 0px 20px 0px 0px;
+		}
+		&__address-phone {
+			padding: 50px;
+		}
+		&__map {
+			border-radius: 10px;
+			min-width: 300px;
+			min-height: 254px;
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+@media (max-width: 768px) {
+	.map-block {
+		background-color: #161616;
+		&__container {
+			padding: 70px 15px 52px;
+		}
+
+		&__body {
+			display: flex;
+			flex-direction: column;
+			@include fontz(1rem, 400, rgb(255, 255, 255), 131%, 0.2px);
+		}
+		&__phone {
+			display: none;
+		}
+		&__address {
+			display: flex;
+			margin: 0px 0px 0px 0px;
+		}
+		&__address-title {
+			margin: 0px 20px 0px 0px;
+		}
+		&__address-phone {
+			padding: 25px;
+		}
+		&__map {
+			border-radius: 10px;
+			min-width: 300px;
+			min-height: 254px;
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+@media (max-width: 360px) {
+	.map-block {
+		background-color: #161616;
+		&__container {
+			padding: 60px 5px 10px;
+		}
+
+		&__body {
+			display: flex;
+			flex-direction: column;
+			@include fontz(1rem, 400, rgb(255, 255, 255), 131%, 0.2px);
+		}
+		&__phone {
+			display: none;
+		}
+		&__address {
+			display: flex;
+			margin: 0px 0px 0px 0px;
+		}
+		&__address-title {
+			margin: 0px 20px 0px 0px;
+		}
+		&__address-phone {
+			padding: 15px;
+		}
+		&__map {
+			border-radius: 10px;
+			min-width: 300px;
+			min-height: 254px;
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+/*....</Display-adapt>.....................................................................................................................................*/
+/***</Content-6>****************************************************************************************************************/
+/***<Content-7>****************************************************************************************************************/
+
+/*...Display-adapt......................................................................................................................................*/
+
+/*....</Display-adapt>.....................................................................................................................................*/
+/***</Content-7>****************************************************************************************************************/
+/*</ОСНОВНОЙ КОНТЕНТ>***************************************************************************************************************************************************/

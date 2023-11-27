@@ -1,0 +1,97 @@
+/*************************modal-form************************************************************************************************************************************************************************/
+// .form-block {
+// 	&__form-container {
+// 	}
+// }
+.modal-form-block {
+	&__title {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		@include fontz(1.5rem, 700, black, 131%, 0.2px);
+		margin: 0px 0px 40px 0px;
+	}
+
+	// &__body {
+	// }
+
+	&__modal-form-input-items {
+		margin: 0px 0px 25px 0px;
+	}
+}
+// .modal-form-input-items {
+// 	&__input-item {
+// 	}
+// }
+.modal-form-input-item {
+	&__input-label {
+		margin: 0px 0px 2px 0px;
+		display: block;
+	}
+	&__textarea-input {
+		resize: vertical;
+		min-height: 120px;
+		border: 1px solid rgb(0, 0, 0);
+		margin: 0px 0px 15px 0px;
+		padding: 20px;
+		width: 350px;
+		border-radius: 5px;
+		background-color: #fff;
+		@include fontz(1.1rem, 400, #000, 130%, 0.2px);
+		&:focus {
+			box-shadow: 1px 0px 8px #000; //inset 0px 0px 8px #000;
+		}
+	}
+	&__input-input {
+		border: 1px solid rgb(0, 0, 0);
+		height: 50px;
+		margin: 0px 0px 15px 0px;
+		padding: 20px;
+		border-radius: 5px;
+		width: 100%;
+		background-color: #fff;
+		@include fontz(1.1rem, 400, #000, 130%, 0.2px);
+		&:focus {
+			box-shadow: 1px 0px 8px #000; //inset 0px 0px 8px #000;
+		}
+		&._error {
+			box-shadow: 1px 0px 8px rgb(243, 8, 8); //inset 0px 0px 8px #000;
+		}
+	}
+}
+// .modal-form-input-items {
+// 	&__input-item {
+// 	}
+// }
+.modal-form-input-item {
+	&__input-label {
+		@include fontz(1.2rem, 500, black, 131%, 0.2px);
+	}
+
+	// &__input-input {
+	// }
+}
+.modal-form {
+	&__button {
+		border-radius: 5px;
+		background-color: $CUSTOM_COLOR_BUTTON_STANDARD_DEFAULT;
+		display: flex;
+		min-height: 50px;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		@include fontz(16px, 400, #000, 50px, 0.2px);
+		padding: 0px 22px;
+		&:hover {
+			background-color: $CUSTOM_COLOR_BUTTON_STANDARD_HOVER;
+		}
+		&:active {
+			background-color: $CUSTOM_COLOR_BUTTON_STANDARD_ACTIVE;
+		}
+	}
+}
+._label {
+	@include fontz(1.3rem, 500, black, 131%, 0.2px);
+}
+/*************************modal-form************************************************************************************************************************************************************************/
